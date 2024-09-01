@@ -52,7 +52,7 @@
 							<ul class="item item01">
 								<li class="title">Thể Loại</li>
 								<?php
-								$conn = mysqli_connect("localhost", "root", "", "bookshop");
+								$conn = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
 								$sql = "select idtheloai,tentheloai from tbltheloai where HienThi = 0";
 								mysqli_query($conn, "SET NAMES 'utf8'");
 								$result = mysqli_query($conn, $sql);
@@ -89,7 +89,7 @@
 									<strong class="label switcher-label">
 										<?php
 										if (isset($_SESSION['email'])) {
-											$conn = mysqli_connect("localhost", "root", "", "bookshop");
+											$conn = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
 											$sql = "select hovaten from tblthongtin where email = '" . $_SESSION['email'] . "'";
 											mysqli_query($conn, "SET NAMES 'utf8'");
 											$result = mysqli_query($conn, $sql);

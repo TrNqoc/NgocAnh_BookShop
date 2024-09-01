@@ -54,7 +54,7 @@
 
 <div class="table-responsive">
 <?php
-    $connection = mysqli_connect("localhost", "root", "", "bookshop");
+    $connection = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
     $query = "SELECT * FROM tbltheloai";
 
     if (isset($_GET['search'])) {
@@ -125,7 +125,7 @@
 
 <!-- Modal Add Button -->
 <?php 
-	 $connection = mysqli_connect("localhost", "root", "", "bookshop");
+	 $connection = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
      $query = "SELECT idTheLoai,tenTheLoai FROM tbltheloai";
      $query_run = mysqli_query($connection, $query);
      if (mysqli_num_rows($query_run)>0) {
@@ -171,7 +171,7 @@
 
 <!-- Modal Add Button -->
 <?php 
-	 $connection = mysqli_connect("localhost", "root", "", "bookshop");
+	 $connection = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
      $query = "SELECT idTheLoai,tenTheLoai FROM tbltheloai";
      $query_run = mysqli_query($connection, $query);
      if (mysqli_num_rows($query_run)>0) {
@@ -217,7 +217,7 @@
 
 <!-- Modal Del Button -->
 <?php 
-    $connection = mysqli_connect("localhost", "root", "", "bookshop");
+    $connection = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
     $query = "SELECT idTheLoai, tenTheLoai FROM tbltheloai";
     $query_run = mysqli_query($connection, $query);
     if (mysqli_num_rows($query_run) > 0) {

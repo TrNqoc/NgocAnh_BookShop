@@ -14,7 +14,7 @@ include "gttop.php" ?>
             else
                 $email = 'null';
 
-            $conn = mysqli_connect("localhost", "root", "", "bookshop");
+            $conn = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
             $sql = "select * from tblsach where idsach = '" . $idsach . "'";
             mysqli_query($conn, "SET NAMES 'utf8'");
             $result = mysqli_query($conn, $sql);
@@ -87,7 +87,7 @@ include "gttop.php" ?>
                         <ul>
                             <!-- khung bên trái -->
                             ';
-            $conn = mysqli_connect("localhost", "root", "", "bookshop");
+            $conn = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
             $sql = "select idtheloai,tentheloai from tbltheloai";
             mysqli_query($conn, "SET NAMES 'utf8'");
             $result = mysqli_query($conn, $sql);

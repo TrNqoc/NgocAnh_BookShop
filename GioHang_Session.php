@@ -17,7 +17,7 @@
 
         if (!isset($_SESSION['CTHD']))
         {
-            $conn = mysqli_connect("localhost","root","","bookshop");
+            $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 			$sql = "select GiaBan from tblsach where idsach = '".$_GET['idsach']."'";
             $result = mysqli_query($conn, $sql);
             $row = mysqli_fetch_array($result);
@@ -47,7 +47,7 @@
                     if ($_SESSION['CTHD'][$i][0] == $_GET['idsach'])
                     {
                         $flag = false;
-                        $conn = mysqli_connect("localhost","root","","bookshop");
+                        $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
                         $sql = "select GiaBan from tblsach where idsach = '".$_GET['idsach']."'";
                         $result = mysqli_query($conn, $sql);
                         $row = mysqli_fetch_array($result);
@@ -61,7 +61,7 @@
                 
                 if ($flag)
                 {
-                    $conn = mysqli_connect("localhost","root","","bookshop");
+                    $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
                     $sql = "select GiaBan from tblsach where idsach = '".$_GET['idsach']."'";
                     $result = mysqli_query($conn, $sql);
                     $row = mysqli_fetch_array($result);
@@ -98,7 +98,7 @@
     if (isset($_GET['xoahoadon_SanPham']))  
     {
         $j = 1;
-        $conn = mysqli_connect("localhost","root","","bookshop");
+        $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
         $sql = "select GiaBan from tblsach where idsach = '".$_GET['idsach']."'";
         $result = mysqli_query($conn, $sql);
 

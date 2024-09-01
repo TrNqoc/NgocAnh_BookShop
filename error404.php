@@ -58,7 +58,7 @@
 											<li><a href="#">Sách Thuật Toán và Giải Thuật </a></li>
 											<li><a href="#">Sách Tiếng Anh Chuyên Ngành </a></li> -->
 											<?php 
-												$conn = mysqli_connect("localhost","root","","bookshop");
+												$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 												$sql = "select idtheloai,tentheloai from tbltheloai";			
 												mysqli_query($conn, "SET NAMES 'utf8'");
 												$result = mysqli_query($conn, $sql);

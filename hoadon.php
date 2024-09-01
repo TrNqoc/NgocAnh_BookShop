@@ -71,7 +71,7 @@
 										if (isset($_SESSION['email']))
 											{
 											$email = $_SESSION['email'];
-											$conn = mysqli_connect("localhost","root","","bookshop");
+											$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 											$sqlHoaDon = "select maHD,email,TongTien,TinhTrang from tblhoadon where email = '".$email."'";
 											$resultHoaDon = mysqli_query($conn, $sqlHoaDon);
 

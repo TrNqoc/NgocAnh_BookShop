@@ -8,7 +8,7 @@ function process() {
         $email = $_GET['email'];
         $matkhau = $_GET['matkhau'];
         //sql
-        $conn = mysqli_connect("localhost","root","","bookshop");
+        $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
         $sql = "select email,matkhau,capbac,Del from tbltaikhoan where email = '".$email."'";
         $result = mysqli_query($conn, $sql);
 
@@ -49,7 +49,7 @@ function process() {
                 $email =  $_GET['email'];
                  //hoa don
                 $hoadon = 'HD';
-                $conn = mysqli_connect("localhost","root","","bookshop");
+                $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
                 mysqli_query($conn, "SET NAMES 'utf8'");
 
                 $sqlHoaDon = "select maHD,email,TongTien,TinhTrang from tblhoadon where email = '".$email."'";

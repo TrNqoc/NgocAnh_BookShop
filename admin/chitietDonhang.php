@@ -85,7 +85,7 @@
 				<?php
 				if(isset($_GET['id'])) {
 					$id = $_GET['id'];
-					$connection = mysqli_connect("localhost","root","","bookshop");
+					$connection = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 					if(isset($_POST['edit_btn'])) {
 						
 					$query = "SELECT * FROM tblchitiethd WHERE MaHD='$id'";

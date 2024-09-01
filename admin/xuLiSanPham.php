@@ -35,7 +35,7 @@
 									<th>Xử lý</th>
 								</tr>
 								<?php
-									$conn = mysqli_connect("localhost","root","","bookshop") or die("lỗi kết nối") ;	
+									$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop") or die("lỗi kết nối") ;	
 
 									$sqlSelect = "SELECT *FROM tblsach";
 
@@ -151,7 +151,7 @@
 	</div>	
 </div>
 <?php 
-    $connection = mysqli_connect("localhost", "root", "", "bookshop");
+    $connection = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
     $query = "SELECT idSach FROM tblsach";
     $query_run = mysqli_query($connection, $query);
     if (mysqli_num_rows($query_run) > 0) {

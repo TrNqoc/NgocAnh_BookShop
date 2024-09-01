@@ -1,6 +1,6 @@
 <?php
 // Kết nối đến cơ sở dữ liệu (thay thế thông tin kết nối của bạn)
-$conn = mysqli_connect("localhost", "root", "", "bookshop");
+$conn = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
 
 // Kiểm tra kết nối
 if (!$conn) {

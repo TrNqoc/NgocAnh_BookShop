@@ -20,7 +20,7 @@
 									<label for="inputEmail">Loại sản phẩm</label>
 									<select name="cat_id" id="cat_id" class="form-control">
 										<?php
-										$conn = mysqli_connect("localhost","root","","bookshop") or die("lỗi kết nối"); 
+										$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop") or die("lỗi kết nối"); 
 										$sqlSelectCat = "SELECT * FROM tbltheloai";
 										$resultCat = mysqli_query($conn ,$sqlSelectCat) or die("lỗi truy vấn danh mục"."$sqlSelectCat");
 

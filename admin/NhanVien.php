@@ -22,7 +22,7 @@
 	<div class="card-body">
 	<div class="table-responsive">
 <?php
-    $connection = mysqli_connect("localhost", "root", "", "bookshop");
+    $connection = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
 	$query = "SELECT * FROM tbltaikhoan";
 
 	if (isset($_GET['search'])) {

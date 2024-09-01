@@ -3,7 +3,7 @@
 
     if (isset($_GET['xoahoadon']))
     {
-        $conn = mysqli_connect("localhost","root","","bookshop");
+        $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
         mysqli_query($conn, "SET NAMES 'utf8'");
         $sqlHoaDon = "delete from tblchitiethd where mahd='".$_GET['mahd']."'";
         $conn->query($sqlHoaDon);
@@ -15,7 +15,7 @@
     }else
     if (isset($_GET['thanhtoan'])) 
     {
-        $conn = mysqli_connect("localhost","root","","bookshop");
+        $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
         mysqli_query($conn, "SET NAMES 'utf8'");
 
         $sqlHoaDon = "update tblhoadon
@@ -29,7 +29,7 @@
         
         if (isset($_GET['xoasanpham'])) 
         {
-            $conn = mysqli_connect("localhost","root","","bookshop");
+            $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
             mysqli_query($conn, "SET NAMES 'utf8'");
             $sqlCTHoaDon = "Delete from tblchitiethd where maHD = '".$_GET['mahd']."'
              and idSach='".$_GET['idsach']."'";
@@ -53,7 +53,7 @@
                 //hoa don
                 $hoadon = 'HD';
                 
-                $conn = mysqli_connect("localhost","root","","bookshop");
+                $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
                 mysqli_query($conn, "SET NAMES 'utf8'");
 
                 $sqlSach = "select idSach,idTheLoai,giaBan from tblsach where idsach = '".$idsach."'";

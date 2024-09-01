@@ -11,7 +11,7 @@
     $gioitinh = 'nam';
     else $gioitinh = 'nữ';
 
-    $conn = mysqli_connect("localhost","root","","bookshop");
+    $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
     $sql = "select email,matkhau from tbltaikhoan";
     $result = mysqli_query($conn, $sql);
 
@@ -22,7 +22,7 @@
         }
 
 
-    $conn = mysqli_connect('localhost','root','','bookshop');
+    $conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
     $sql = "insert into tblthongtin
     VALUES ('$hovaten','$email','$gioitinh')";
 

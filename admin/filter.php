@@ -2,7 +2,7 @@
 <?php  
  if(isset($_POST["from_date"], $_POST["to_date"],$_POST["tableHD"]))  
  {  
-      $connect = mysqli_connect("localhost", "root", "", "bookshop");  
+      $connect = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");  
       $output = '';  
       $query = "  
            SELECT * FROM tblhoadon  
@@ -73,7 +73,7 @@
  if(isset($_POST["from_date"], $_POST["to_date"],$_POST["tableTK"],$_POST['selectRole1']))
  {
       
-     $connect = mysqli_connect("localhost", "root", "", "bookshop");  
+     $connect = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");  
      $output1 = '';  
      $select = $_POST['selectRole1'];
      if($select==0)

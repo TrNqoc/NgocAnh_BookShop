@@ -43,7 +43,7 @@ else
 	if ( isset($_GET['mahd']) && isset($_SESSION['email']) ) 
 	{
 
-		$conn = mysqli_connect("localhost","root","","bookshop");
+		$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 		$sql = "select mahd,email,TongTien,TinhTrang from tblhoadon where email = '".$_SESSION['email']."'
 		and mahd ='".$_GET['mahd']."'";
 		$result = mysqli_query($conn, $sql);	
@@ -91,7 +91,7 @@ else
 											$email = $_SESSION['email'];
 
 											//hoa don
-											$conn = mysqli_connect("localhost","root","","bookshop");		
+											$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");		
 											mysqli_query($conn, "SET NAMES 'utf8'");
 											$sqlHoaDon = "select mahd,email,TongTien,TinhTrang from tblhoadon where email = '".$email."'
 											and mahd ='".$mahd."'";

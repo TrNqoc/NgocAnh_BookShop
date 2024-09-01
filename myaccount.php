@@ -18,7 +18,7 @@ include "gttop.php"; ?>
 							<?php
 							// Kiểm tra xem biến $_SESSION['email'] đã được định nghĩa chưa
 							if (isset($_SESSION['email'])) {
-								$conn = mysqli_connect("localhost", "root", "", "bookshop");
+								$conn = mysqli_connect("sql207.infinityfree.com", "if0_37194966", "ngocanh09876", "if0_37194966_bookshop");
 								$sql = "SELECT * FROM tblthongtin WHERE email = '" . $_SESSION['email'] . "'";
 								mysqli_query($conn, "SET NAMES 'utf8'");
 								$result = mysqli_query($conn, $sql);

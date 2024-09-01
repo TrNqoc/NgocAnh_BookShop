@@ -14,7 +14,7 @@ include "gttop.php" ?>
         						<ul>
 									<!-- khung bên trái -->
         							<?php 
-										$conn = mysqli_connect("localhost","root","","bookshop");
+										$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 										$sql = "select idtheloai,tentheloai from tbltheloai where HienThi = 0";			
 										mysqli_query($conn, "SET NAMES 'utf8'");
 										$result = mysqli_query($conn, $sql);
@@ -79,7 +79,7 @@ include "gttop.php" ?>
 										$idtl = $_GET['idtl'];
 										$tranghientai = $_GET['tranghientai'];
 
-										$conn = mysqli_connect("localhost","root","","bookshop");
+										$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 										$sql = "select idSach from tblsach where idtheloai = '".$idtl."' and HienThi = 0";			
 										mysqli_query($conn, "SET NAMES 'utf8'");
 										$result = mysqli_query($conn, $sql);
@@ -104,7 +104,7 @@ include "gttop.php" ?>
 									else if (isset($_GET['tranghientai'])){
 										$tranghientai = $_GET['tranghientai'];
 
-										$conn = mysqli_connect("localhost","root","","bookshop");
+										$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 										$sql = "select idSach from tblsach where HienThi = 0";			
 										mysqli_query($conn, "SET NAMES 'utf8'");
 										$result = mysqli_query($conn, $sql);
@@ -195,7 +195,7 @@ include "gttop.php" ?>
 		$idtl = $_GET['idtl'];
 		$tranghientai = $_GET['tranghientai'];
 
-		$conn = mysqli_connect("localhost","root","","bookshop");
+		$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 		$sql = "select idSach from tblsach where idtheloai = '".$idtl."' and HienThi = 0";			
 		mysqli_query($conn, "SET NAMES 'utf8'");
 		$result = mysqli_query($conn, $sql);
@@ -219,7 +219,7 @@ include "gttop.php" ?>
 	else if ( !isset($_GET['timkiem'])) {
 		$tranghientai = $_GET['tranghientai'];
 
-		$conn = mysqli_connect("localhost","root","","bookshop");
+		$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 		$sql = "select idSach from tblsach where HienThi = 0";			
 		mysqli_query($conn, "SET NAMES 'utf8'");
 		$result = mysqli_query($conn, $sql);
@@ -243,7 +243,7 @@ include "gttop.php" ?>
 	{
 		$tensach = $_GET['timkiem'];
 		$sotrang = 0;
-		$conn = mysqli_connect("localhost","root","","bookshop");
+		$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop");
 		$sql = "SELECT * from tblsach where tensach like '%".$tensach."%' and HienThi = 0";			
 		mysqli_query($conn, "SET NAMES 'utf8'");
 		$result = mysqli_query($conn, $sql);

@@ -1,5 +1,5 @@
 <?php
-		$conn = mysqli_connect("localhost","root","","bookshop") or die("lỗi kết nối"); 
+		$conn = mysqli_connect("sql207.infinityfree.com","if0_37194966","ngocanh09876","if0_37194966_bookshop") or die("lỗi kết nối"); 
 
 		if (isset($_GET["id"])) {
 			$id=$_GET["id"];
