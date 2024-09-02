@@ -19,16 +19,16 @@
 
 	<!-- Stylesheets -->
 
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="bootstrap/css/fontawesome.css" />
-	<link rel="stylesheet" href="bootstrap/css/fontawesome.min.css" />
-	<link rel="stylesheet" href="bootstrap/css/templatemo.css" />
+	<link rel="stylesheet" href="/css/plugins.css">
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/bootstrap/css/fontawesome.css" />
+	<link rel="stylesheet" href="/bootstrap/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="/bootstrap/css/templatemo.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="styles/index.css" />
-	<link rel="stylesheet" href="bootstrap/css/custom.css" />
-	<link rel="stylesheet" href="../BookShop/style.css">
-	<link rel="stylesheet" href="../BookShop/index.css">
+	<link rel="stylesheet" type="text/css" href="/styles/index.css" />
+	<link rel="stylesheet" href="/bootstrap/css/custom.css" />
+	<link rel="stylesheet" href="/BookShop/style.css">
+	<link rel="stylesheet" href="/BookShop/index.css">
 
 
 	<!-- Modernizer js -->
