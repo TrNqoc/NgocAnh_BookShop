@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut" type="image/x-icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="images/icon.png">
 
 	<!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
@@ -27,8 +27,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/styles/index.css" />
 	<link rel="stylesheet" href="/bootstrap/css/custom.css" />
-	<link rel="stylesheet" href="/BookShop/style.css">
-	<link rel="stylesheet" href="/BookShop/index.css">
+	<link rel="stylesheet" href="/maincss/style.css">
+	<link rel="stylesheet" href="/maincss/index.css">
 
 
 	<!-- Modernizer js -->
